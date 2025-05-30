@@ -960,6 +960,6 @@ if "df" in st.session_state and not st.session_state["df"].empty:
                     # View 4: Monthly Volume
                     st.subheader(
                         "View 4: Monthly Volume of Brand Mentions (Reddit Posts + Comments)")
-                st.plotly_chart(bar_fig, use_container_width=True)
+                    st.plotly_chart(bar_fig, use_container_width=True)
                 
-                st.session_state["analysis_complete"] = True
+                    st.session_state["analysis_complete"] = True
