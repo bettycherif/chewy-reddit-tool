@@ -954,4 +954,12 @@ if "df" in st.session_state and not st.session_state["df"].empty:
                                 with st.expander(label):
                                     st.markdown(item["Summary"])
                         else:
-                          
+                            st.info(
+                                "No summaries available. Run the analysis first.")
+
+                    # View 4: Monthly Volume
+                    st.subheader(
+                        "View 4: Monthly Volume of Brand Mentions (Reddit Posts + Comments)")
+                    st.plotly_chart(bar_fig, use_container_width=True)
+
+                    st.session_state["analysis_complete"] = True
